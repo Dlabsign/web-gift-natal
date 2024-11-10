@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 
-export default function NameSection({ nama }) {
+interface NameSectionProps {
+  nama: string;
+}
+
+export default function NameSection({ nama }: NameSectionProps) {
   return (
     <section className="justify-between items-center flex flex-wrap w-full px-4 md:px-8 lg:px-16">
       <div className="flex flex-col justify-center items-center w-full lg:w-auto mb-4 lg:mb-0">
