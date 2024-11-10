@@ -16,7 +16,7 @@ export default function Keisha() {
     >
       <Snow />
       <div className="pt-10 sm:pt-24">
-        <NameSection nama={"Keisha Jessica"} />
+        <NameSection nama={"Keisha Jessica Michelle"} />
       </div>
       <div className="mt-10 sm:mt-44 h-full flex flex-col justify-center items-center">
         <Timeline />
