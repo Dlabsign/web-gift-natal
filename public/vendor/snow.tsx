@@ -15,7 +15,7 @@ export default function Snow() {
         ".embedim-snow{position: absolute;width: 10px;height: 10px;background: white;border-radius: 50%;margin-top:-10px;opacity: 0;animation: fadeIn 3s forwards, fall linear infinite}";
       let embHTML = "";
 
-      for (let i = 1; i <= 26; i++) {
+      for (let i = 1; i <= 46; i++) {
         embHTML += '<i class="embedim-snow"></i>';
         let rndX = embRand(0, 1000000) * 0.0001,
           rndO = embRand(-100000, 100000) * 0.0001,
