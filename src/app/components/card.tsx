@@ -5,7 +5,7 @@ const WishCard = () => {
   const [wishes, setWishes] = useState(["", "", ""]);
 
   // Update the specific wish based on the index
-  const handleWishChange = (index, value) => {
+  const handleWishChange = (index: number, value: string) => {
     const newWishes = [...wishes];
     newWishes[index] = value;
     setWishes(newWishes);
