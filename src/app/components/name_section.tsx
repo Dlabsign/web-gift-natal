@@ -46,7 +46,7 @@ export default function NameSection({ nama }) {
               x: [0, -10, 0], // Melompat naik dan turun
             }}
             transition={{
-              duration: 3,
+              duration: 5,
               repeat: Infinity,
               repeatType: "loop",
             }}

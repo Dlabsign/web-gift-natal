@@ -12,12 +12,18 @@
   src: url("/fonts/SourceSerif4_36pt-LightItalic.ttf");
 }
 
+@font-face {
+  font-family: "Hate Your Writing";
+  src: url("/fonts/HateYourWriting.ttf");
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --font-script: "Imperial Script", cursive;
   --font-sans: "Source Serif Pro", sans;
   --font-italicL: "Source4 L italic", sans;
+  --font-HateYourWriting: "Hate Your Writing", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {

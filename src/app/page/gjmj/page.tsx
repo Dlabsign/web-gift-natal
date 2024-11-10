@@ -3,8 +3,8 @@ import NameSection from "@/app/components/name_section";
 import Snow from "../../../../public/vendor/snow";
 import Timeline from "@/app/components/abouty3";
 import QuoteSection from "@/app/components/ayat";
-import useSound from "use-sound";
-
+import BackgroundSound from "@/app/components/sound";
+import WishCard from "@/app/components/card";
 
 export default function Keisha() {
   return (
@@ -16,7 +16,7 @@ export default function Keisha() {
     >
       <Snow />
       <div className="pt-10 sm:pt-24">
-        <NameSection nama={"Daniel Kurnia Putra"} />
+        <NameSection nama={"Gresisce Joice"} />
       </div>
       <div className="mt-10 sm:mt-44 h-full flex flex-col justify-center items-center">
         <Timeline />
@@ -27,6 +27,10 @@ export default function Keisha() {
       <div className="px-7 sm:px-14 py-5 sm:py-10  flex flex-col justify-center items-center">
         <img src="/circle.svg" alt="" className="h-[150px] " />{" "}
       </div>
+      <div className="px-7 sm:px-14 py-5 sm:py-10  flex flex-col justify-center items-center">
+        <WishCard />
+      </div>
+      <BackgroundSound />
     </section>
   );
 }

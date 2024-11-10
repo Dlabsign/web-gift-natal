@@ -42,4 +42,19 @@ export const events = [
     gambar: "/journey/cg fun.png",
     align: "right",
   },
+  {
+    year: "1948",
+    gambar: "/journey/cg fun.png",
+    align: "left",
+  },
+  {
+    year: "1948",
+    gambar: "/journey/cg fun.png",
+    align: "right",
+  },
+  {
+    year: "1948",
+    gambar: "/journey/cg fun.png",
+    align: "left",
+  },
 ];
