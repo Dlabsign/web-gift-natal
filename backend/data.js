@@ -23,8 +23,18 @@ export const bibleVerse = [
 
 export const events = [
   {
-    year: "02/JAN/2024",
-    gambar: "/journey/cg fun.png",
+    year: "05/JAN/2024",
+    gambar: "/journey/firstcg.png",
+    align: "left",
+  },
+  {
+    year: "15/JAN/2024",
+    gambar: "/journey/bwg.png",
+    align: "right",
+  },
+  {
+    year: "23/JAN/2024",
+    gambar: "/journey/am24.png",
     align: "left",
   },
   {
@@ -33,28 +43,8 @@ export const events = [
     align: "right",
   },
   {
-    year: "1948",
-    gambar: "/journey/cg fun.png",
-    align: "left",
-  },
-  {
-    year: "1948",
-    gambar: "/journey/cg fun.png",
-    align: "right",
-  },
-  {
-    year: "1948",
-    gambar: "/journey/cg fun.png",
-    align: "left",
-  },
-  {
-    year: "1948",
-    gambar: "/journey/cg fun.png",
-    align: "right",
-  },
-  {
-    year: "1948",
-    gambar: "/journey/cg fun.png",
+    year: "10/MAR/2024",
+    gambar: "/journey/aogcon.png",
     align: "left",
   },
 ];
