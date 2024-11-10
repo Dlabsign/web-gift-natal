@@ -29,7 +29,7 @@ export const events = [
   },
   {
     year: "15/JAN/2024",
-    gambar: "/journey/bwg.png",
+    gambar: "/journey/BWG.png",
     align: "right",
   },
   {
