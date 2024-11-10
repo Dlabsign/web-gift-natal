@@ -43,8 +43,19 @@ export const events = [
     align: "right",
   },
   {
-    year: "10/MAR/2024",
-    gambar: "/journey/aogcon.png",
+    year: "18/AGU/2024",
+    gambar: "/journey/agustusan.jpg",
     align: "left",
   },
+  {
+    year: "10/MAR/2024",
+    gambar: "/journey/aogcon.png",
+    align: "right",
+  },
+  {
+    year: "12/OKT/2024",
+    gambar: "/journey/matching.png",
+    align: "left",
+  },
+  
 ];
