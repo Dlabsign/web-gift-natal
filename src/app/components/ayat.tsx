@@ -4,7 +4,6 @@ import {bibleVerse} from"../../../backend/data.js";
 
 export default function QuoteSection() {
   
-
   const kalimatRandom = bibleVerse[Math.floor(Math.random()*bibleVerse.length)]
 
   return (

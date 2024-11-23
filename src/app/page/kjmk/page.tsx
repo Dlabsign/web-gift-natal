@@ -6,6 +6,7 @@ import QuoteSection from "@/app/components/ayat";
 import BackgroundSound from "@/app/components/sound";
 import WishCard from "@/app/components/card";
 
+
 export default function Keisha() {
   return (
     <section
@@ -28,7 +29,7 @@ export default function Keisha() {
         <img src="/circle.svg" alt="" className="h-[150px] " />{" "}
       </div>
       <div className="px-7 sm:px-14 py-5 sm:py-10  flex flex-col justify-center items-center">
-        <WishCard />
+        <WishCard nama={"keisha"} />
       </div>
       <BackgroundSound />
     </section>

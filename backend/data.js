@@ -32,11 +32,7 @@ export const events = [
     gambar: "/journey/BWG.png",
     align: "right",
   },
-  {
-    year: "23/JAN/2024",
-    gambar: "/journey/am24.png",
-    align: "left",
-  },
+
   {
     year: "03/FEB/2024",
     gambar: "/journey/chintya.png",
@@ -57,5 +53,4 @@ export const events = [
     gambar: "/journey/matching.png",
     align: "left",
   },
-  
 ];

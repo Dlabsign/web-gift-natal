@@ -55,7 +55,7 @@ export default function NameSection({ nama }: NameSectionProps) {
               repeatType: "loop",
             }}
           >
-            Christmast
+            Christmas
           </motion.h1>
 
           {/* Animasi Glow pada Gambar Bintang */}
