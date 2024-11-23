@@ -1,6 +1,8 @@
 import React from "react";
 import { events } from "../../../backend/data.js";
 import { motion } from "framer-motion";
+import Image from "next/image.js";
+
 
 const Timeline = () => {
   return (
@@ -47,7 +49,7 @@ const Timeline = () => {
                   <h3 className="text-lg sm:text-5xl font-bold text-gray-800 font-SourceSerifProItl mx-2">
                     {event.year}
                   </h3>
-                  <img src={event.gambar} alt="" className="mt-0 sm:mt-2 rounded" />
+                  <Image src={event.gambar} alt="" className="mt-0 sm:mt-2 rounded" />
                 </div>
               </motion.div>
             </div>

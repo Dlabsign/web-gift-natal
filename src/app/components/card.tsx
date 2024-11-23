@@ -19,7 +19,11 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-const WishCard = ({ nama }) => {
+interface WishCardProps {
+  nama: string; // Tentukan tipe yang sesuai, misalnya string
+}
+
+const WishCard: React.FC<WishCardProps> = ({ nama }) => {
   // State for wishes
   const [wishes, setWishes] = useState([""]);
   // State for email
