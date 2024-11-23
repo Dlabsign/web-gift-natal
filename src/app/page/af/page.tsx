@@ -28,7 +28,7 @@ export default function Keisha() {
         <img src="/circle.svg" alt="" className="h-[150px] " />{" "}
       </div>
       <div className="px-7 sm:px-14 py-5 sm:py-10  flex flex-col justify-center items-center">
-        <WishCard />
+      <WishCard nama={"Alvin"} />
       </div>
       <BackgroundSound />
     </section>
