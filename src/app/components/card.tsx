@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, FormEvent, KeyboardEvent } from "react";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 import Image from "next/image";
@@ -25,21 +25,24 @@ interface WishCardProps {
 
 const WishCard: React.FC<WishCardProps> = ({ nama }) => {
   // State for wishes
-  const [wishes, setWishes] = useState([""]);
+  const [wishes, setWishes] = useState<string[]>([""]);
   // State for email
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState<string>("");
   // State for popup confirmation
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isPopupVisible, setIsPopupVisible] = useState<boolean>(false);
 
   // Update the specific wish based on the index
-  const handleWishChange = (index, value) => {
+  const handleWishChange = (index: number, value: string) => {
     const newWishes = [...wishes];
     newWishes[index] = value;
     setWishes(newWishes);
   };
 
   // Add a new wish input when Enter is pressed
-  const handleKeyDown = (e, index) => {
+  const handleKeyDown = (
+    e: KeyboardEvent<HTMLInputElement>,
+    index: number
+  ): void => {
     if (e.key === "Enter") {
       e.preventDefault();
       if (index === wishes.length - 1 && wishes[index].trim() !== "") {
@@ -49,13 +52,13 @@ const WishCard: React.FC<WishCardProps> = ({ nama }) => {
   };
 
   // Delete a specific wish input
-  const handleDelete = (index) => {
+  const handleDelete = (index: number): void => {
     const newWishes = wishes.filter((_, i) => i !== index);
     setWishes(newWishes);
   };
 
   // Show confirmation popup
-  const handleConfirmPopup = (e) => {
+  const handleConfirmPopup = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     setIsPopupVisible(true);
   };
