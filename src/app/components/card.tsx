@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
+import Image from "next/image";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -138,9 +139,11 @@ const WishCard = ({ nama }) => {
       {isPopupVisible && (
         <div className="fixed backdrop-blur top-0 left-0 w-screen h-screen bg-black bg-opacity-75 flex justify-center items-center z-50 font-HateYourWriting  sm:p-20">
           <div className=" p-8 rounded-lg shadow-lg w-full text-center flex flex-col items-center">
-            <img
-              src="/postcard.jpg" // Pastikan gambar ada di folder /public
+            <Image
+              src="/postcard.jpg" // Pastikan gambar ini ada di folder /public
               alt="Postcard Preview"
+              width={800} // Tambahkan dimensi gambar
+              height={600}
               className="w-full max-w-md sm:max-w-lg h-auto object-contain"
             />
             <p className="text-3xl sm:text-5xl mb-4 text-slate-50 py-2 sm:py-5">
