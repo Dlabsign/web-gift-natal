@@ -3,13 +3,12 @@ import { events } from "../../../backend/data.js";
 import { motion } from "framer-motion";
 import Image from "next/image.js";
 
-
 const Timeline = () => {
   return (
     <div className="w-full mx-auto bg-[#B79D65] px-4 md:px-8 lg:px-16">
       <div className="flex flex-col sm:flex-row justify-center text-white items-center gap-2 sm:gap-x-2 tracking-wide py-8 sm:py-16">
-        <h1 className="text-lg font-semibold font-SourceSerifProItl text-center sm:text-left">
-          Special Gift from us
+        <h1 className="text-2xl font-semibold font-SourceSerifProItl text-center sm:text-left">
+          Sefruit Momentsss -
         </h1>
         <h2 className="text-3xl font-bold font-SourceSerifProItl underline text-center sm:text-left">
           CG Youth 03
@@ -22,7 +21,7 @@ const Timeline = () => {
         {events.map((event, index) => (
           <motion.div
             key={index}
-            className={`mb-4 flex items-center w-full ${
+            className={`mb-2 flex items-center w-full ${
               event.align === "left" ? "justify-start" : "justify-end"
             }`}
           >
@@ -45,11 +44,14 @@ const Timeline = () => {
                 transition={{ duration: 1.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
-                <div className="p-1 sm:p-4 bg-white shadow-lg rounded-lg">
-                  <h3 className="text-lg sm:text-5xl font-bold text-gray-800 font-SourceSerifProItl mx-2">
-                    {event.year}
-                  </h3>
-                  <Image src={event.gambar} alt="" className="mt-0 sm:mt-2 rounded" />
+                <div className="p-1 sm:p-2 bg-white shadow-lg rounded-lg">
+                  <Image
+                    src={event.gambar}
+                    alt=""
+                    className="mt-0 sm:mt-1 rounded"
+                    width={500} // Define width for aspect ratio calculation
+                    height={300} // Define height for aspect ratio calculation
+                  />{" "}
                 </div>
               </motion.div>
             </div>

@@ -5,6 +5,7 @@ import Timeline from "@/app/components/abouty3";
 import QuoteSection from "@/app/components/ayat";
 import BackgroundSound from "@/app/components/sound";
 import WishCard from "@/app/components/card";
+import Kalimat from "@/app/components/teks";
 
 export default function Keisha() {
   return (
@@ -16,7 +17,10 @@ export default function Keisha() {
     >
       <Snow />
       <div className="pt-10 sm:pt-24">
-        <NameSection nama={"Gresisce Joice"} />
+        <NameSection nama={"Devinta Trista"} />
+      </div>
+      <div className="px-7 sm:px-14 mt-24 flex flex-col justify-center items-center">
+        <Kalimat tekskata={"Thankyouu Keisha sudah menjadi leader yang luar biasa"} />
       </div>
       <div className="mt-10 sm:mt-44 h-full flex flex-col justify-center items-center">
         <Timeline />
@@ -28,7 +32,7 @@ export default function Keisha() {
         <img src="/circle.svg" alt="" className="h-[150px] " />{" "}
       </div>
       <div className="px-7 sm:px-14 py-5 sm:py-10  flex flex-col justify-center items-center">
-      <WishCard nama={"Joice"} />
+        <WishCard nama={"Devinta Trista"} />
       </div>
       <BackgroundSound />
     </section>

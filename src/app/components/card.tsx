@@ -51,12 +51,6 @@ const WishCard: React.FC<WishCardProps> = ({ nama }) => {
     }
   };
 
-  // Delete a specific wish input
-  const handleDelete = (index: number): void => {
-    const newWishes = wishes.filter((_, i) => i !== index);
-    setWishes(newWishes);
-  };
-
   // Show confirmation popup
   const handleConfirmPopup = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
@@ -86,31 +80,24 @@ const WishCard: React.FC<WishCardProps> = ({ nama }) => {
     <div className="flex justify-center items-center w-full mb-24 ">
       <div className="relative bg-white rounded-xl font-HateYourWriting shadow-lg p-8 max-w-lg w-full text-gray-800 -rotate-3">
         <h2 className="text-5xl font-medium font-HateYourWriting">
-          Tulis Wishlistmu di Tahun 2025 <span className="text-4xl">✍️</span>
+          Tulis 5 Wishlistmu di Tahun 2025 <span className="text-4xl">✍️</span>
         </h2>
         <p className="text-gray-400 font-light mb-6 font-HateYourWriting text-3xl">
           ~ Leaders of Youth 03
         </p>
         <form className="space-y-6" onSubmit={handleConfirmPopup}>
           {/* Wishlist Inputs */}
-          {wishes.map((wish, index) => (
+          {[0, 1, 2, 3, 4].map((_, index) => (
             <div key={index} className="flex gap-5 items-center">
               <h4 className="text-3xl">{index + 1}</h4>
               <input
                 type="text"
-                value={wish}
+                value={wishes[index] || ""} // Pastikan data sesuai index
                 onChange={(e) => handleWishChange(index, e.target.value)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
-                placeholder={`Tulis harapan kamu`}
+                placeholder={`Make A Wish`}
                 className="w-full text-gray-600 italic border-b border-gray-400 pb-1 font-HateYourWriting text-4xl focus:outline-none focus:border-gray-600"
               />
-              <button
-                type="button"
-                onClick={() => handleDelete(index)}
-                className="text-red-500 hover:text-red-700 font-bold text-2xl"
-              >
-                ✖
-              </button>
             </div>
           ))}
 
