@@ -69,7 +69,7 @@ const WishCard: React.FC<WishCardProps> = ({ nama }) => {
       setEmail("");
       setWishes([""]);
       setIsPopupVisible(false);
-      alert("Whistlist berhasil dikirim!");
+      alert("Whistlist berhasil dikirim ke 2025, tunggu tahun depan buat lihat ;)");
     } catch (error) {
       console.error("Error saving data: ", error);
       alert("Terjadi kesalahan saat menyimpan data.");
