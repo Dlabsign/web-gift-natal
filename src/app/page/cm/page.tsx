@@ -17,11 +17,13 @@ export default function Keisha() {
     >
       <Snow />
       <div className="pt-10 sm:pt-24">
-        <NameSection nama={"Hanna "} />
+        <NameSection nama={"Ce Maria"} />
       </div>
       <div className="px-7 sm:px-14 mt-24 flex flex-col justify-center items-center">
         <Kalimat
-          tekskata={"Thankyouu Keisha sudah menjadi leader yang luar biasa"}
+          tekskata={
+            "Selamat Natal, Ce Maria! 🎋🎄 Terima kasih banyak, Ce, karena sudah menjadi Gembala AOG yang luar biasa buat kami di Sidoarjo. Melalui Ce Maria, kami belajar dan menyaksikan gimana rencana Tuhan dapat terwujud dengan begitu cepatt. Dari Ce Maria, kita juga belajar kalau pemakaian Tuhan ndak bisa dibatasi oleh apa pun! Terima kasih ya Cee atas teladan dan pelayanan yang Selalu mengukatkan kami semua. Terima Kasih Ce Maria ✨✨. ~ CGL Y3"
+          }
         />
       </div>
       <div className="mt-10 sm:mt-44 h-full flex flex-col justify-center items-center">
@@ -34,7 +36,7 @@ export default function Keisha() {
         <img src="/circle.svg" alt="" className="h-[150px] " />{" "}
       </div>
       <div className="px-7 sm:px-14 py-5 sm:py-10  flex flex-col justify-center items-center">
-        <WishCard nama={"Hanna"} />
+        <WishCard nama={"Ce Maria"} />
       </div>
       <BackgroundSound />
     </section>

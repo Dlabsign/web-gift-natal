@@ -20,7 +20,7 @@ export default function Keisha() {
         <NameSection nama={"Gabriella Sharon Jessica"} />
       </div>
       <div className="px-7 sm:px-14 mt-24 flex flex-col justify-center items-center">
-        <Kalimat tekskata={"Thankyouu Keisha sudah menjadi leader yang luar biasa"} />
+        <Kalimat tekskata={"Merry Christmas Cee Jessi, Thnkyouu Yaa cee sudah menjadi CGL & Coach buat diriku hehee, mungkin lek gk ada cc, diriku gk bakal God bless you abundantly! ✨"} />
       </div>
       <div className="mt-10 sm:mt-44 h-full flex flex-col justify-center items-center">
         <Timeline />

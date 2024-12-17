@@ -17,7 +17,7 @@ export default function Keisha() {
     >
       <Snow />
       <div className="pt-10 sm:pt-24">
-        <NameSection nama={"Andika Allza Noveren"} />
+        <NameSection nama={"Gresisce Joice"} />
       </div>
       <div className="px-7 sm:px-14 mt-24 flex flex-col justify-center items-center">
         <Kalimat
@@ -36,7 +36,7 @@ export default function Keisha() {
         <img src="/circle.svg" alt="" className="h-[150px] " />{" "}
       </div>
       <div className="px-7 sm:px-14 py-5 sm:py-10  flex flex-col justify-center items-center">
-        <WishCard nama={"Andika Allza Noveren"} />
+        <WishCard nama={"Gresisce Joice"} />
       </div>
       <BackgroundSound />
     </section>

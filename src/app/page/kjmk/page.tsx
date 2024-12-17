@@ -22,7 +22,7 @@ export default function Keisha() {
       <div className="px-7 sm:px-14 mt-24 flex flex-col justify-center items-center">
         <Kalimat
           tekskata={
-            "Merry Christmas Keisha! Thankyou yaa sudah menjadi leader yang mau buat dimuridkan. Pertumbuhan mu buanterrr🏎🏎, rasae kek baru kemarin ae kita ketemu😂, Aku juga seueneng pollll km jadi deket sama orangtuamu as salah satu wish mu"
+            "Merry Christmas Keisha! Thankyou yaa sudah menjadi leader yang mau buat dimuridkan. Pertumbuhan mu buanterrr🏎🏎, rasae kek baru kemarin ae ketemu😂, Aku juga seueneng pollll km jadi deket sama orangtuamu as salah satu wish mu. Dannn Semangat terus ya keii ndek pelayanan, kampus, & BEM kampus. Semogaa km teruss di bawa Tuhan buat jadi Kepala & bukan ekor🔥🔥🔥. Aku pengen liat km semakin Bertumbuh kei, dan selalu membawa terang dimanpunn!!!. Dan lek ada apa2 ceritaa!!! heheehe, dah wess itu aja.Keep GROW ya KEISHA JESSICA MICHELLE KURNIAWAN. God bless you abundantly! ✨"
           }
         />
       </div>
